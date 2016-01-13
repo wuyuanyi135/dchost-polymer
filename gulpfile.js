@@ -23,7 +23,10 @@ gulp.task('build', function() {
 gulp.task('default', function() {
   connect.server({
     root: "dest",
-    livereload: true
+    livereload: true,
+    livereload: {
+      port: 8081
+    }
   })
 
   gulp.watch(["src/**"], ['build']);
