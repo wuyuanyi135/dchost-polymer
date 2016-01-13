@@ -15243,9 +15243,14 @@ container for main-panel -->
   <style>
     :host {
       display: block;
-      margin: 20px;
       width: 100%;
-      background: #fff;
+      
+  }
+  
+  paper-material {
+    padding:10px;
+    margin:10px;
+    background: #fff;
   }
   </style>
   <template>
@@ -15468,11 +15473,6 @@ container for main-panel -->
       background: #eee;
     }
 
-    #main-content {
-      padding: 10px;
-
-    }
-
     #drawer-header-panel {
       border-right: 1px solid var(--google-grey-300);
 
@@ -15493,12 +15493,8 @@ container for main-panel -->
             [[title]]
           </div>
         </paper-toolbar>
-        <div id="main-content">
-          <main-panel>
-
-        </main-panel></div>
-
-      </paper-header-panel>
+        <main-panel>
+      </main-panel></paper-header-panel>
     </paper-drawer-panel>
 
   </template>
