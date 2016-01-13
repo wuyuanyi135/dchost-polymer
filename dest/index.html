@@ -15244,12 +15244,13 @@ container for main-panel -->
     :host {
       display: block;
       margin: 20px;
-      line-height: 80px;
+      width: 100%;
       background: #fff;
-    }
+  }
   </style>
   <template>
     <paper-material elevation="1">
+      
       Object
     </paper-material>
   </template>
@@ -15265,13 +15266,10 @@ container for main-panel -->
   <style>
     :host {
       display: block;
-
       @apply(--paper-font-title);
     }
 
     .container {
-      width: 100%;
-      height: 100%;
     }
 
 
@@ -15495,7 +15493,7 @@ container for main-panel -->
             [[title]]
           </div>
         </paper-toolbar>
-        <div id="main-content" class="layout horizontal">
+        <div id="main-content">
           <main-panel>
 
         </main-panel></div>
