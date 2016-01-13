@@ -1,0 +1,20 @@
+{
+  "name": "dchost-polymer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "gulp-vulcanize": "^6.1.0"
+  },
+  "devDependencies": {
+    "connect-livereload": "^0.5.4",
+    "gulp-connect": "^2.3.1",
+    "gulp-livereload": "^3.8.1"
+  }
+}

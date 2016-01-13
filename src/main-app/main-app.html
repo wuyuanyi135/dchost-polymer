@@ -1,0 +1,32 @@
+<link rel="import" href="../bower_components/polymer/polymer-mini.html">
+
+<link rel="import" href="../bower_components/paper-drawer-panel/paper-drawer-panel.html">
+
+<link rel="import" href="../main-panel/main-panel.html">
+<link rel="import" href="../side-bar/side-bar.html">
+<dom-module id="main-app">
+  <style>
+    :host {
+      display: block;
+       @apply(--paper-font-body1);
+    }
+  </style>
+  <template>
+    <paper-drawer-panel>
+      <div drawer>
+        <side-bar/>
+      </div>
+      <div main>
+        <main-panel/>
+      </div>
+    </paper-drawer-panel>
+
+  </template>
+
+  <script>
+  Polymer({
+    is: "main-app"
+
+  });
+  </script>
+</dom-module>

@@ -1,0 +1,40 @@
+<link rel="import" href="../bower_components/polymer/polymer-mini.html">
+<link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
+<link rel="import" href="../bower_components/paper-styles/paper-styles.html">
+<dom-module id="main-panel">
+  <style>
+    :host {
+      display: block;
+
+    }
+
+    .main-header{
+      @apply(--paper-font-headline);
+    }
+  </style>
+
+
+  <template>
+    <paper-header-panel>
+      <paper-toolbar class="flex paper-header">
+        <div class="main-header">[[title]]</div>
+      </paper-toolbar>
+
+    </paper-header-panel>
+  </template>
+
+  <script>
+    Polymer({
+      is: "main-panel",
+      properties: {
+        title: {
+          type: String,
+          value: "DCHost Interface"
+        }
+      }
+    });
+  </script>
+</dom-module>
