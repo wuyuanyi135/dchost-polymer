@@ -1,7 +1,9 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/paper-material/paper-material.html">
 <link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
-
+<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../bower_components/paper-tabs/paper-tab.html">
+<link rel="import" href="../bower_components/paper-styles/paper-styles-classes.html">
 <dom-module id="temp-app">
   <style>
     :host {
@@ -16,11 +18,23 @@
     background: #fff;
     min-height: 400px;
   }
+
+  paper-tabs {
+    background-color: var(--default-primary-color);
+    color: var(--text-primary-color);
+  }
+
   </style>
   <template>
+    <paper-tabs selected="0">
+      <paper-tab>Settings</paper-tab>
+      <paper-tab>Plot</paper-tab>
+      <paper-tab>Table</paper-tab>
+    </paper-tabs>
+
     <paper-material elevation="1">
 
-      
+
     </paper-material>
   </template>
 
